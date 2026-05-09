@@ -1,0 +1,35 @@
+---
+config:
+  flowchart:
+    curve: linear
+---
+graph TD;
+	__start__([<p>__start__</p>]):::first
+	A01_BrandDNA(A01_BrandDNA)
+	A02_MarketIntel(A02_MarketIntel)
+	A08_KeywordGraph(A08_KeywordGraph)
+	A10_Competitors(A10_Competitors)
+	A03_Audience(A03_Audience)
+	A04_Localisation(A04_Localisation)
+	A05_Strategy(A05_Strategy)
+	A06_Content(A06_Content)
+	A07_Critic(A07_Critic)
+	A09_Scheduler(A09_Scheduler)
+	__end__([<p>__end__</p>]):::last
+	A01_BrandDNA --> A02_MarketIntel;
+	A01_BrandDNA --> A08_KeywordGraph;
+	A01_BrandDNA --> A10_Competitors;
+	A02_MarketIntel --> A03_Audience;
+	A03_Audience --> A04_Localisation;
+	A04_Localisation --> A05_Strategy;
+	A05_Strategy --> A06_Content;
+	A06_Content --> A07_Critic;
+	A07_Critic -.-> A06_Content;
+	A07_Critic -.-> A09_Scheduler;
+	A08_KeywordGraph --> A03_Audience;
+	A10_Competitors --> A03_Audience;
+	__start__ --> A01_BrandDNA;
+	A09_Scheduler --> __end__;
+	classDef default fill:#f2f0ff,line-height:1.2
+	classDef first fill-opacity:0
+	classDef last fill:#bfb6fc

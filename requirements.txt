@@ -1,0 +1,17 @@
+aiohttp
+httpx
+fal_client
+playwright
+beautifulsoup4
+Pillow
+fastapi>=0.115,<0.116
+starlette>=0.37.2,<0.39.0
+langgraph>=0.2,<0.3
+pydantic>=2.9,<3
+uvicorn>=0.31,<1.0
+langchain>=0.3,<0.4
+langchain-openai>=0.2,<0.3
+langsmith>=0.1,<0.2
+networkx>=3.2,<4
+PyJWT>=2.9,<3
+cryptography>=43,<45

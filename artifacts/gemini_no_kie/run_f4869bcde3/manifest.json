@@ -1,0 +1,66 @@
+{
+  "mode": "gemini_no_kie",
+  "kie_disabled": true,
+  "brief": "Starbucks Reserve monsoon evening launch in Mumbai, premium lifestyle audience, cinematic luxury tone, strong CTA for in-store visit",
+  "gemini": {
+    "ok": true,
+    "model": "gemini-2.5-flash-lite",
+    "error": null,
+    "attempted_models": [
+      {
+        "model": "gemini-2.5-flash",
+        "error": "HTTP 429 attempt 1"
+      },
+      {
+        "model": "gemini-2.5-flash",
+        "error": "HTTP 429 attempt 2"
+      },
+      {
+        "model": "gemini-2.5-flash",
+        "error": "HTTP 429 attempt 3"
+      },
+      {
+        "model": "gemini-3.1-flash-image-preview",
+        "error": "HTTP 429 attempt 1"
+      },
+      {
+        "model": "gemini-3.1-flash-image-preview",
+        "error": "HTTP 429 attempt 2"
+      },
+      {
+        "model": "gemini-3.1-flash-image-preview",
+        "error": "HTTP 429 attempt 3"
+      },
+      {
+        "model": "gemini-3.1-flash",
+        "error": "HTTP 404"
+      },
+      {
+        "model": "gemini-3.0-flash",
+        "error": "HTTP 404"
+      },
+      {
+        "model": "gemini-3.0-pro",
+        "error": "HTTP 404"
+      }
+    ]
+  },
+  "prompts": {
+    "image_prompt": "A close-up shot of a steaming Starbucks Reserve latte, artfully swirled with monsoon-inspired patterns, set against a blurred backdrop of Mumbai's iconic skyline at dusk. Soft, warm light illuminates the rich crema and the luxurious texture of the coffee. Subtle reflections of city lights shimmer on the polished surface of the mug, evoking a sense of sophisticated comfort and urban elegance during a rainy evening.",
+    "video_prompt": "Begin with a slow-motion shot of rain gently falling on a Starbucks Reserve window in Mumbai. Transition to a close-up of hands delicately holding a warm Reserve mug, steam rising. Pan to reveal a glimpse of the chic, ambient Starbucks Reserve interior, hinting at exclusivity. End with a final shot of the latte, with the Mumbai skyline softly visible through the rain-streaked window, emphasizing a moment of refined escape.",
+    "title": "Mumbai's Monsoon Reserve Evening",
+    "cta": "Experience Reserve Today"
+  },
+  "image": {
+    "provider": "pollinations",
+    "model": "flux",
+    "status": "fallback",
+    "source_url": "https://image.pollinations.ai/prompt/A%20close-up%20shot%20of%20a%20steaming%20Starbucks%20Reserve%20latte%2C%20artfully%20swirled%20with%20monsoon-inspired%20patterns%2C%20set%20against%20a%20blurred%20backdrop%20of%20Mumbai%27s%20iconic%20skyline%20at%20dusk.%20Soft%2C%20warm%20light%20illuminates%20the%20rich%20crema%20and%20the%20luxurious%20texture%20of%20the%20coffee.%20Subtle%20reflections%20of%20city%20lights%20shimmer%20on%20the%20polished%20surface%20of%20the%20mug%2C%20evoking%20a%20sense%20of%20sophisticated%20comfort%20and%20urban%20elegance%20during%20a%20rainy%20evening.?model=flux&width=1080&height=1920&nologo=true",
+    "local_path": "artifacts/gemini_no_kie/run_f4869bcde3/keyframe.jpg"
+  },
+  "video": {
+    "engine": "ffmpeg-local",
+    "duration_seconds": 4,
+    "local_path": "artifacts/gemini_no_kie/run_f4869bcde3/ad_clip.mp4"
+  }
+}
